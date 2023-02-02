@@ -1,0 +1,17 @@
+ <section>
+    
+    <img src="app/Template/img/logo_header1.png" width="80px;"/>
+	<hr>
+	
+    {% for item in detalhe %}<!--postagens nome usado no parametro do array da homecontroler  -->
+                   
+			<p><b>Viagem/Evento: {{item.even_titulo}}</b></p>
+			<p><b>Data:</b> {{item.even_data}}&nbsp; <b>Local:</b> {{item.even_local}}</p>
+			<p><b>Descrição:</b> {{item.even_descricao}}</p>	
+			<p><b>Participante:</b>&nbsp;{{item.even_participante}} <b>CPF:</b>&nbsp;{{item.cpf}}
+			</p>
+			<b>Centro de Custo:</b>&nbsp;{{item.centrocusto}}	
+
+    {% endfor %}
+	
+</section>
